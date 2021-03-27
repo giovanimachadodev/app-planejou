@@ -6,13 +6,111 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="21dp"
+            android:background="@color/Secundary"
+    >
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="43dp"
+
+        >
+
+           <androidx.cardview.widget.CardView
+                   android:layout_width="178dp"
+                   android:layout_height="196dp"
+           >
+               <TextView
+                       android:padding="13dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="15sp"
+                       tools:text="Ganhe bônus!\n Planeje a sua\n viagem"
+               />
+
+               <ImageView
+                       android:layout_width="44dp"
+                       android:layout_height="44dp"
+                       android:src="@drawable/ic_notes"
+                       android:layout_gravity="end|bottom"
+                       android:layout_marginBottom="11.4dp"
+               />
+
+           </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                    android:layout_marginStart="16dp"
+                    android:layout_width="178dp"
+                    android:layout_height="196dp"
+            >
+
+                <TextView
+                        android:padding="13dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        tools:text="Viagem dos sonhos...\nEscolha os próximos \ndestinos!
+
+"
+                />
+
+                <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/ic_binocular"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginEnd="12.6dp"
+                        android:layout_marginBottom="11.4dp"
+                />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginTop="40.2dp"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                tools:text="Compre agora a sua passagem!"
+        />
+
+        <TextView
+                android:layout_marginTop="20.8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/White"
+                tools:text="Confira os pacotes escolhidos pra você!"
+        />
+        
+        <androidx.cardview.widget.CardView
+                android:layout_marginTop="9dp"
+                android:layout_width="372dp"
+                android:layout_height="226.93dp"
+        />
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_marginTop="19dp"
+                tools:text="Verificar planilha de gastos"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+        />
+
+
+
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

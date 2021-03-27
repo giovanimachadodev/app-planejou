@@ -1,0 +1,11 @@
+package com.example.app_planejou
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+
+class FilterServices : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_filter_services)
+    }
+}
