@@ -44,6 +44,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvOffer"
                 android:layout_marginTop="33dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

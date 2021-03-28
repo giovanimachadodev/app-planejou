@@ -34,7 +34,12 @@
             app:layout_constraintBottom_toTopOf="@+id/textView4"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
+            android:id="@+id/txtDetailsPackages"
+            android:layout_marginTop="32dp"
+=======
             android:id="@+id/textView"
+>>>>>>> fed2b03c4b193105f7d43a0390b7af18bcd1ed60
             app:layout_constraintVertical_bias="0.0"/>
 
 
