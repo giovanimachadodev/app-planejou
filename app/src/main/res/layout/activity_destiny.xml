@@ -60,6 +60,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:paddingVertical="20dp"
+                    android:background="@drawable/shape_stroke"
                     app:layout_constraintTop_toBottomOf="@+id/textView8" app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" android:id="@+id/editText"
                     android:layout_marginTop="12dp"/>
