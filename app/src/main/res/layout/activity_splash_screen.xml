@@ -5,10 +5,41 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#5D3B8C"
+        android:layout_gravity="center"
         tools:context=".SplashScreen">
 
-
-
+    <ImageView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/old_4"
+            app:layout_constraintVertical_bias="1.0"
+            android:id="@+id/imageView"/>
+    <ImageView
+            android:layout_width="280dp"
+            android:layout_height="90dp"
+            android:background="@drawable/ic_logoplanejou"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="18dp"
+            android:id="@+id/imageView2"/>
+    <TextView
+            android:paddingHorizontal="20dp"
+            android:textColor="#ff7908"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:text="Transformando os seus sonhos em realidade!"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
