@@ -4,6 +4,7 @@
 <br>
 
 
+
 ## Público alvo
 
 Idosos que possuem contato com a tecnologia e que gostam de viajar de forma mais segura e com menos imprevistos
@@ -17,7 +18,8 @@ Minimizar a barreira entre o idoso e o sonho de viajar
 
 ## Solução
 
-Aplicativo para dispositivos móveis de fácil manuseio para o planejamento de viagens
+Aplicativo para dispositivos móveis de fácil manuseio para o planejamento de viagens de forma a garantir a 
+inclusão de mais usuários que gostam de viajar, democratizando o direito ao lazer.
 <br><br>
 
 
