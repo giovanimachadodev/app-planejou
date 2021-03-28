@@ -88,6 +88,7 @@
                     android:id="@+id/textView5"
                     tools:layout_editor_absoluteX="35dp" app:layout_constraintTop_toBottomOf="@+id/imageView4"/>
             <ImageView
+                    android:id="@+id/imgBtnViewHotel"
                     android:backgroundTint="@color/Primary"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
@@ -114,25 +115,26 @@
                     android:textSize="20sp"
                     android:textColor="@color/White"
                     android:background="@drawable/shape"
-                    android:text="Serviços Adicionais"
-                    android:id="@+id/button"
+                    android:text="Comprar Pacote"
+                    android:id="@+id/btnServicosAdicionais"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.49"
                     app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="80dp"
                     app:layout_constraintTop_toBottomOf="@+id/textView6" app:layout_constraintVertical_bias="0.133"/>
             <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="43dp"
-                    android:textSize="20sp"
-                    android:textAllCaps="false"
-                    android:background="@drawable/shape"
-                    android:textColor="@color/White"
-                    android:text="Fazer Orçamento"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:id="@+id/btnFazerOrcamento"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:background="@drawable/shape"
+                android:textColor="@color/White"
+                android:text="Fazer Orçamento"
 
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintHorizontal_bias="0.49" android:layout_marginBottom="16dp"
-                    app:layout_constraintTop_toBottomOf="@+id/button" app:layout_constraintVertical_bias="0.545"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.49" android:layout_marginBottom="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/btnServicosAdicionais" app:layout_constraintVertical_bias="0.545"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

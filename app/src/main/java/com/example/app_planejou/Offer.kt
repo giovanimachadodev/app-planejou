@@ -1,7 +1,9 @@
 package com.example.app_planejou
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.app_planejou.adapter.OfferAdapter
@@ -15,11 +17,14 @@ class Offer : AppCompatActivity() {
 
         val rvOffer = findViewById<RecyclerView>(R.id.rvOffer)
         val adapterProdutos = OfferAdapter(listOffer)
+        val btnFilter: ImageView = findViewById(R.id.imgBtnFiltro)
         rvOffer.adapter = adapterProdutos
-
-
         rvOffer.layoutManager = LinearLayoutManager(this)
 
+        btnFilter.setOnClickListener {
+            val telaFiltros = Intent(this, FilterActivity::class.java )
+            startActivity(telaFiltros)
+        }
     }
 
     companion object{

@@ -1,13 +1,17 @@
 package com.example.app_planejou.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
+import com.example.app_planejou.DetailedOffer
 import com.example.app_planejou.R
 import com.example.app_planejou.model.Offers
+import com.google.android.material.internal.ContextUtils.getActivity
 
 class OfferAdapter(private val listOffer: MutableList<Offers> ) : RecyclerView.Adapter<OfferAdapter.OfferHolder>() {
 
@@ -29,8 +33,8 @@ class OfferAdapter(private val listOffer: MutableList<Offers> ) : RecyclerView.A
         holder.price.text = "R$ ${listOffer[position].price}"
 
         holder.itemView.setOnClickListener {
-
-
+            val novaTela = Intent(it.context, DetailedOffer::class.java)
+            it.context.startActivity(novaTela)
         }
 
     }
@@ -38,6 +42,5 @@ class OfferAdapter(private val listOffer: MutableList<Offers> ) : RecyclerView.A
     override fun getItemCount(): Int {
         return listOffer.size
     }
-
 
 }

@@ -40,9 +40,10 @@
 
     <TextView
 
-            android:text="Serviços inclusivos"
+            android:text="Serviços inclusos"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
+            android:layout_marginBottom="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@+id/textView4"
@@ -50,24 +51,23 @@
             app:layout_constraintStart_toStartOf="parent"/>
 
 
-
-    <TextView
-            android:textSize="20sp"
+        <TextView
+            android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:padding="30dp"
+            android:layout_marginBottom="96dp"
             android:background="@drawable/shape_stroke"
-            android:id="@+id/textView4"
             android:lineSpacingExtra="20dp"
+            android:padding="30dp"
             android:text=
-                    "Passagem \nHotel
+                "Passagem \nHotel
                      \nLocação de veículo"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/textView3"
-            android:layout_marginBottom="96dp" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintHorizontal_bias="0.516" app:layout_constraintVertical_bias="1.0"/>
-    <CheckBox
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="1.0"/>
+        <CheckBox
             android:scaleX="1.8"
             android:scaleY="1.8"
             android:checked="true"
@@ -138,7 +138,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView3"
-            android:id="@+id/button4"/>
+            android:id="@+id/btnComprarPacote"/>
 
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/additionaList"

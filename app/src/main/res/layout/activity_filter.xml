@@ -27,7 +27,7 @@
                      \nPróximo a farmácias \nSegue os protocolos da covid
                      \nPróximo a unidade de saúde"
             android:padding="30dp"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="100dp"
             android:layout_height="match_parent"
