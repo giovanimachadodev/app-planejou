@@ -4,6 +4,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Secundary"
+
     tools:context=".EmergencyHelp">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+
+    <TextView
+        android:id="@+id/imageView3"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="65dp"
+        android:background="@drawable/shape_stroke"
+        android:lineSpacingExtra="43dp"
+        android:padding="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="166dp"
+        android:layout_height="233dp"
+        android:src="@mipmap/ic_help_foreground"
+
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="192dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:text="PEDIR AJUDA"
+        android:gravity="center_vertical"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="DESEJA LIGAR PARA \nA AUTORIDADE LOCAL?"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+
+    <Button
+        android:text="NÃO"
+        android:textSize="35sp"
+        android:id="@+id/btn_nao"
+        android:layout_width="148dp"
+        android:layout_height="82dp"
+        android:layout_margin="10dp"
+        android:paddingHorizontal="35dp"
+        android:backgroundTint="@color/red"
+
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/guidelineMiddle"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+
+        android:text="SIM"
+        android:textSize="35sp"
+        android:id="@+id/btn_sim"
+        android:layout_width="148dp"
+        android:layout_height="82dp"
+        android:layout_margin="10dp"
+        android:paddingHorizontal="35dp"
+        android:backgroundTint="@color/green"
+
+
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineMiddle"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
