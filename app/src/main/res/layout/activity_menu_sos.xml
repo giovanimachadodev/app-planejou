@@ -29,8 +29,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/image_police"
+    <ImageButton
+        android:id="@+id/btn_police"
         android:layout_width="97dp"
         android:layout_height="89dp"
         android:layout_marginTop="16dp"
@@ -40,6 +40,7 @@
         app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/card_police"
+
        />
 
     <TextView
@@ -70,8 +71,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/card_police" />
 
-    <ImageView
-        android:id="@+id/imageSamu"
+    <ImageButton
+        android:id="@+id/btn_samu"
         android:layout_width="97dp"
         android:layout_height="89dp"
         android:layout_marginTop="16dp"
@@ -110,8 +111,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/card_samu" />
 
-    <ImageView
-        android:id="@+id/imagefireman"
+    <ImageButton
+        android:id="@+id/btn_fireman"
         android:layout_width="97dp"
         android:layout_height="89dp"
         android:layout_marginTop="16dp"
@@ -127,7 +128,9 @@
         android:layout_width="218dp"
         android:layout_height="108dp"
         android:layout_marginTop="4dp"
+
         android:gravity="center_vertical"
+
         android:text="BOMBEIRO - 193"
 
         android:textSize="25sp"
@@ -150,8 +153,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/card_fireman" />
 
-    <ImageView
-        android:id="@+id/imagehelp"
+    <ImageButton
+        android:id="@+id/btn_help"
         android:layout_width="97dp"
         android:layout_height="89dp"
         android:layout_marginTop="16dp"
@@ -190,8 +193,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/card_help" />
 
-    <ImageView
-        android:id="@+id/imagesos"
+    <ImageButton
+        android:id="@+id/btn_sos"
         android:layout_width="97dp"
         android:layout_height="89dp"
         android:layout_marginTop="16dp"
@@ -216,10 +219,12 @@
         app:layout_constraintTop_toTopOf="@+id/card_sos"
         />
 
-    <ImageView
-        android:layout_width="55dp"
-        android:layout_height="75dp"
-        android:src="@drawable/ic_microfone_de_teatro"
+    <ImageButton
+        android:backgroundTint="@color/Primary"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_microfone_de_teatro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

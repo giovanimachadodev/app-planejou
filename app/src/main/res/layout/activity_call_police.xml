@@ -72,9 +72,9 @@
 
 
     <Button
+        android:id="@+id/btn_nao"
         android:text="NÃO"
         android:textSize="35sp"
-        android:id="@+id/btn_nao"
         android:layout_width="148dp"
         android:layout_height="82dp"
         android:layout_margin="10dp"
@@ -89,10 +89,9 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <Button
-
+        android:id="@+id/btn_sim"
         android:text="SIM"
         android:textSize="35sp"
-        android:id="@+id/btn_sim"
         android:layout_width="148dp"
         android:layout_height="82dp"
         android:layout_margin="10dp"

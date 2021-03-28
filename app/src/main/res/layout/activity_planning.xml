@@ -18,9 +18,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="34dp"
             android:layout_marginTop="35dp"
+            android:text="Planeje a sua passagem "
             android:textColor="@color/White"
-            android:textSize="24sp"
-            android:text="Planeje a sua passagem " />
+            android:textSize="28sp" />
 
         <LinearLayout
 
@@ -29,11 +29,10 @@
             android:layout_marginHorizontal="21dp"
             android:layout_marginTop="41dp"
             android:layout_marginBottom="37dp"
-            android:paddingBottom="20dp"
+            android:background="@drawable/shape_stroke2"
             android:orientation="vertical"
             android:paddingHorizontal="25dp"
-            android:backgroundTint="@color/grey"
-            android:background="@drawable/shape_stroke"
+            android:paddingBottom="20dp"
 
             >
 
@@ -41,48 +40,53 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="26dp"
+                android:textSize="20sp"
                 android:text="Local de embarque"
-                />
+                android:textStyle="bold" />
 
             <LinearLayout
-                android:background="@drawable/shape_stroke"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                >
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_stroke">
 
                 <EditText
                     android:layout_width="245dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="12dp"
-                    android:textSize="14sp"
                     android:hint="ex: São Paulo"
-                    />
+                    android:textSize="14sp" />
 
                 <ImageView
+
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/ic_microfone_de_teatro"
-                    />
+                    android:backgroundTint="@color/Primary"
+                    android:src="@drawable/ic_microfone_de_teatro" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
-                android:text="Destino" />
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:text="Destino"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/shape_stroke"
+
                 >
 
                 <EditText
                     android:layout_width="245dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="12dp"
-                    android:textSize="14sp"
-                    android:hint="ex: Rio de Janeiro" />
+                    android:hint="ex: Rio de Janeiro"
+                    android:textSize="14sp" />
 
                 <ImageView
                     android:layout_width="25dp"
@@ -91,12 +95,14 @@
 
             </LinearLayout>
 
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
-                android:text="Destino" />
+                android:textSize="20sp"
+                android:text="Destino"
+                android:textStyle="bold" />
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -105,50 +111,54 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:background="@drawable/shape_stroke"
-
                     android:layout_width="125dp"
+
                     android:layout_height="35dp"
+                    android:background="@drawable/shape_stroke"
+                    android:hint="Ida 26/03/20"
                     android:textAlignment="center"
-                    android:textSize="14sp"
-                    android:hint="Ida 26/03/20" />
+                    android:textSize="14sp" />
 
                 <EditText
-                    android:background="@drawable/shape_stroke"
-
                     android:layout_width="125dp"
+
                     android:layout_height="35dp"
+                    android:background="@drawable/shape_stroke"
+                    android:hint="Ida 26/03/20"
                     android:textAlignment="center"
-                    android:textSize="14sp"
-                    android:hint="Ida 26/03/20" />
+                    android:textSize="14sp" />
 
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="match_parent"
-                    android:src="@drawable/ic_microfone_de_teatro"/>
+                    android:src="@drawable/ic_microfone_de_teatro" />
 
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Orçamento" />
-
+                android:layout_marginTop="25dp"
+                android:textSize="20sp"
+                android:text="Orçamento"
+                android:textStyle="bold" />
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
                 android:background="@drawable/shape_stroke"
+                android:orientation="horizontal"
+
                 >
 
                 <EditText
                     android:layout_width="245dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="12dp"
-                    android:textSize="14sp"
-                    android:hint="ex: R$ 2000,00" />
+                    android:hint="ex: R$ 2000,00"
+                    android:textSize="14sp" />
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -161,19 +171,18 @@
             <Button
                 android:id="@+id/btn_ofertas"
 
-                android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                android:layout_marginHorizontal="20dp"
-                android:textAllCaps="false"
-                android:background="@drawable/shape"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginBottom="15dp"
-
-
+                android:layout_marginHorizontal="20dp"
                 android:layout_marginTop="33dp"
-                android:text="Pesquisar Ofertas" />
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/shape"
+                android:text="Pesquisar Ofertas"
+                android:textAllCaps="false"
 
+
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
 
 
         </LinearLayout>

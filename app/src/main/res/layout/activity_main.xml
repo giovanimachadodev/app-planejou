@@ -8,8 +8,8 @@
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/textView"
+    <Button
+        android:id="@+id/btn_planning"
         android:layout_width="170dp"
         android:layout_height="186dp"
         android:layout_marginTop="35dp"
@@ -22,6 +22,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,8 +32,9 @@
 
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
+        app:layout_constraintStart_toStartOf="@+id/btn_planning"
+        app:layout_constraintTop_toTopOf="@+id/btn_planning" />
+
 
     <ImageView
         android:layout_width="90dp"
@@ -39,9 +42,17 @@
         android:layout_gravity="end|bottom"
         android:layout_margin="10dp"
         android:src="@drawable/ic_notes"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="@+id/textView" />
+        app:layout_constraintBottom_toBottomOf="@+id/btn_planning"
+        app:layout_constraintEnd_toEndOf="@+id/btn_planning" />
 
+    <Button
+        android:id="@+id/btn_dreams"
+        android:layout_width="61dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12" />
     <TextView
         android:id="@+id/textView12"
         android:layout_width="170dp"
@@ -75,7 +86,14 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView12"
         app:layout_constraintEnd_toEndOf="@+id/textView12" />
 
-
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="61dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2" />
     <TextView
         android:id="@+id/textView2"
         android:layout_width="170dp"
@@ -88,7 +106,7 @@
         android:padding="10dp"
         app:layout_constraintEnd_toStartOf="@+id/guidelineMiddle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_planning" />
 
     <TextView
         android:id="@+id/textView14"
@@ -113,7 +131,14 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="@+id/textView2" />
 
-
+    <Button
+        android:id="@+id/btn_miles"
+        android:layout_width="61dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/textView13" />
     <TextView
         android:id="@+id/textView13"
         android:layout_width="170dp"
@@ -161,12 +186,13 @@
         android:id="@+id/imageButton"
         android:layout_width="322dp"
         android:layout_height="89dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="116dp"
         android:background="@drawable/shape"
 
         android:src="@drawable/paisagem"
         app:layout_constraintBottom_toTopOf="@+id/btn_sos"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -191,7 +217,6 @@
         android:backgroundTint="@color/Primary"
         android:text="SOS"
 
-        android:textAllCaps="false"
         android:textColor="@color/White"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
