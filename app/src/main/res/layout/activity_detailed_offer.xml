@@ -29,7 +29,7 @@
                     android:textSize="30sp"
                     android:textColor="@color/White"
                     android:layout_gravity="center_vertical"
-                    tools:text="Finlândia - Helsinque"
+                    android:text="Finlândia - Helsinque"
                     android:id="@+id/textView2" app:layout_constraintEnd_toStartOf="@+id/imageView2"
                     app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
@@ -60,47 +60,48 @@
                     android:layout_width="match_parent"
                     android:layout_height="203dp"
                     android:id="@+id/imageView4"
+                    android:src="@drawable/finlandia"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     android:layout_marginTop="23.6dp"
                     app:layout_constraintHorizontal_bias="0.49"/>
 
-
-            <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="18dp"
-                    android:textAlignment="center"
-                    tools:text="Veja o entorno clicando aqui"
-                    android:id="@+id/textView4"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView4"
-                    android:layout_marginTop="2.3dp" app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"/>
-
-
             <ImageView
-                    android:layout_width="25.5dp"
-                    android:layout_height="25.5dp"
-                    android:src="@drawable/ic_eye"
-                    app:layout_constraintStart_toEndOf="@+id/textView4"
-                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@+id/imageView4"
-                    app:layout_constraintBottom_toTopOf="@+id/textView5" app:layout_constraintHorizontal_bias="0.217"
-                    app:layout_constraintVertical_bias="0.0"/>
+                    android:backgroundTint="@color/Primary"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:background="@drawable/ic_street_view"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                    app:layout_constraintStart_toStartOf="@+id/imageView4" app:layout_constraintHorizontal_bias="0.08"
+                    app:layout_constraintTop_toTopOf="@+id/imageView4"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                    app:layout_constraintVertical_bias="0.938"/>
+
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20dp"
-                    tools:text="Hotel: Labore - R$ 500,00\nLocação: Localiza - R$ 100,00\nPassagens: R$ 400,00\nDias: 3 dias\nSegue os protocolos da covid"
+                    android:lineSpacingExtra="10dp"
+                    android:textSize="20sp"
+                    android:paddingTop="15dp"
+                    android:text="Hotel: Arctic - R$ 500,00\nLocação: Localiza - R$ 100,00\nPassagens: R$ 400,00\nDias: 3 dias"
                     android:id="@+id/textView5"
-                    app:layout_constraintTop_toBottomOf="@+id/textView4"
-                    android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.49"/>
+                    tools:layout_editor_absoluteX="35dp" app:layout_constraintTop_toBottomOf="@+id/imageView4"/>
+            <ImageView
+                    android:backgroundTint="@color/Primary"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/ic_eye"
+                    app:layout_constraintTop_toTopOf="@+id/textView5"
+                    app:layout_constraintStart_toStartOf="@+id/textView5"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView5" android:layout_marginStart="256dp"
+                    app:layout_constraintVertical_bias="0.032"/>
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="20dp"
+                    android:textSize="24dp"
                     android:textStyle="bold"
-                    tools:text="R$ 1.000,00"
+                    android:text="R$ 1.000,00"
                     android:id="@+id/textView6"
                     app:layout_constraintTop_toBottomOf="@+id/textView5"
                     app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
@@ -108,22 +109,25 @@
             <Button
                     android:layout_width="match_parent"
                     android:layout_height="43dp"
+                    android:layout_marginTop="18dp"
                     android:textAllCaps="false"
+                    android:textSize="20sp"
                     android:textColor="@color/White"
                     android:background="@drawable/shape"
-                    tools:text="Comprar passagem"
+                    android:text="Serviços Adicionais"
                     android:id="@+id/button"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.49"
                     app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="80dp"
-                    app:layout_constraintTop_toBottomOf="@+id/textView6" app:layout_constraintVertical_bias="0.774"/>
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" app:layout_constraintVertical_bias="0.133"/>
             <Button
                     android:layout_width="match_parent"
                     android:layout_height="43dp"
+                    android:textSize="20sp"
                     android:textAllCaps="false"
                     android:background="@drawable/shape"
                     android:textColor="@color/White"
-                    tools:text="Comprar passagem"
+                    android:text="Fazer Orçamento"
 
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"

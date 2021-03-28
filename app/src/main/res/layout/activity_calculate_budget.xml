@@ -24,12 +24,12 @@
         >
 
             <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="30sp"
                     android:textColor="@color/White"
                     android:layout_gravity="center_vertical"
-                    tools:text="Calcular orçamento"
+                    android:text="Calcular orçamento"
                     android:id="@+id/textView2"
                     app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintTop_toTopOf="parent"/>
@@ -51,7 +51,7 @@
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:text="Destino"
+                    android:text="Destino"
                     android:textSize="20sp"
                     android:layout_marginTop="26dp"
                     android:id="@+id/textView8" app:layout_constraintTop_toTopOf="parent"
@@ -59,18 +59,28 @@
 
             <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="56dp"
                     android:paddingVertical="20dp"
                     android:background="@drawable/shape_stroke"
                     app:layout_constraintTop_toBottomOf="@+id/textView8" app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" android:id="@+id/editText"
                     android:layout_marginTop="13dp"/>
 
+            <ImageView
+                    android:backgroundTint="@color/Primary"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/ic_microfone_de_teatro"
+                    app:layout_constraintEnd_toEndOf="@+id/editText"
+             app:layout_constraintHorizontal_bias="0.961"
+                    app:layout_constraintVertical_bias="0.351" android:id="@+id/imageView6"
+                    app:layout_constraintBottom_toTopOf="@+id/textView7"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8"/>
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
-                    tools:text="Orçamento Atual "
+                    android:text="Orçamento Atual "
                     android:textSize="20sp"
                     android:id="@+id/textView7"
                     app:layout_constraintTop_toBottomOf="@+id/editText" app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +88,7 @@
 
             <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="56dp"
                     android:layout_marginTop="13dp"
                     android:paddingVertical="20dp"
                     android:background="@drawable/shape_stroke"
@@ -87,18 +97,27 @@
                     android:id="@+id/editText2" app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"/>
 
+
+            <ImageView
+                    android:backgroundTint="@color/Primary"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/ic_microfone_de_teatro"
+                    app:layout_constraintTop_toTopOf="@+id/editText2"
+                    app:layout_constraintBottom_toBottomOf="@+id/editText2"
+                    app:layout_constraintEnd_toEndOf="@+id/editText2"/>
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="25dp"
-                    tools:text="Deposito Mensal"
+                    android:text="Depósito Mensal"
                     android:textSize="20sp"
                     app:layout_constraintTop_toBottomOf="@+id/editText2"
                     android:id="@+id/textView9" app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"/>
             <EditText
                     android:layout_width="209dp"
-                    android:layout_height="60dp"
+                    android:layout_height="56dp"
                     android:paddingVertical="20dp"
                     android:background="@drawable/shape_stroke"
                     app:layout_constraintTop_toBottomOf="@+id/textView9"
@@ -107,13 +126,22 @@
                     app:layout_constraintStart_toStartOf="@+id/textView9"
                     android:id="@+id/editText3"/>
 
+
+            <ImageView
+                    android:backgroundTint="@color/Primary"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/ic_microfone_de_teatro"
+                    app:layout_constraintBottom_toBottomOf="@+id/editText3"
+                    app:layout_constraintTop_toTopOf="@+id/editText3"
+                    app:layout_constraintEnd_toEndOf="@+id/editText3"/>
             <Button
                     android:layout_width="90dp"
                     android:layout_height="60dp"
-                    android:background="@color/Primary"
+                    android:background="@drawable/shape"
                     android:textColor="@color/White"
                     android:textSize="24sp"
-                    tools:text="OK"
+                    android:text="OK"
                     app:layout_constraintStart_toEndOf="@+id/editText3"
                     app:layout_constraintTop_toBottomOf="@+id/textView9" android:layout_marginTop="12dp"
                     android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
@@ -121,22 +149,33 @@
 
             <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="94dp"
+                    android:layout_height="wrap_content"
                     android:padding="10dp"
+                    android:textSize="18sp"
                     android:background="@drawable/shape_stroke"
-                    tools:text="Você conseguirá realizar a sua viagem em 10 meses. "
+                    android:text="Você conseguirá realizar\n a sua viagem em 10 meses. "
                     app:layout_constraintTop_toBottomOf="@+id/editText3" app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="23dp"
                     app:layout_constraintHorizontal_bias="0.49" android:id="@+id/textView11"/>
 
+            <ImageView
+                    android:backgroundTint="@color/Primary"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:background="@drawable/ic_som"
+                    app:layout_constraintTop_toTopOf="@+id/textView11"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView11"
+                    app:layout_constraintEnd_toEndOf="@+id/textView11" android:layout_marginEnd="8dp"
+                    app:layout_constraintVertical_bias="0.517"/>
             <Button
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:textColor="@color/White"
-                    android:layout_marginTop="9dp"
+                    android:textSize="24dp"
+                    android:layout_marginTop="20dp"
                     android:textAllCaps="false"
-                    tools:text="Salvar o orçamento "
-                    android:background="@color/Primary"
+                    android:text="Salvar o orçamento "
+                    android:background="@drawable/shape"
                     app:layout_constraintTop_toBottomOf="@+id/textView11" app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintHorizontal_bias="0.49" app:layout_constraintVertical_bias="0.0"/>

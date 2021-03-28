@@ -1,4 +1,4 @@
-package com.example.app_planejou
+package com.example.app_planejou.model
 
 import android.widget.ImageView
 

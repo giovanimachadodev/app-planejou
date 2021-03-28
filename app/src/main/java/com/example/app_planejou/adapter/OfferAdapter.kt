@@ -1,4 +1,4 @@
-package com.example.app_planejou
+package com.example.app_planejou.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.app_planejou.R
+import com.example.app_planejou.model.Offers
 
 class OfferAdapter(private val listOffer: MutableList<Offers> ) : RecyclerView.Adapter<OfferAdapter.OfferHolder>() {
 
@@ -24,7 +26,7 @@ class OfferAdapter(private val listOffer: MutableList<Offers> ) : RecyclerView.A
     override fun onBindViewHolder(holder: OfferHolder, position: Int) {
         holder.image.setImageResource(listOffer[position].image)
         holder.details.text = listOffer[position].details
-        holder.price.text = listOffer[position].price.toString()
+        holder.price.text = "R$ ${listOffer[position].price}"
 
         holder.itemView.setOnClickListener {
 
