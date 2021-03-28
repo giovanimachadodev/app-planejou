@@ -4,21 +4,224 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Secundary"
+
     tools:context=".MenuSos">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/Secundary"
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingHorizontal="21dp">
+        app:layout_constraintGuide_percent="0.5"
+        />
 
-        <ImageButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_fireman_foreground" />
+    <TextView
+        android:id="@+id/card_police"
+
+        android:layout_width="357dp"
+        android:layout_height="115dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/shape_stroke"
+        android:layout_marginTop="16dp"
+        android:padding="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_police"
+        android:layout_width="97dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="16dp"
+
+        android:src="@mipmap/ic_police_foreground"
+        app:layout_constraintEnd_toEndOf="@+id/card_police"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card_police"
+       />
+
+    <TextView
+        android:id="@+id/txt_police"
+        android:layout_width="218dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:text="POLÍCIA - 190"
+
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/card_police"
+        app:layout_constraintTop_toTopOf="@+id/card_police" />
 
 
-    </LinearLayout>
+    <TextView
+        android:id="@+id/card_samu"
+
+        android:layout_width="357dp"
+        android:layout_height="115dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/shape_stroke"
+        android:layout_marginTop="10dp"
+        android:padding="30dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_police" />
+
+    <ImageView
+        android:id="@+id/imageSamu"
+        android:layout_width="97dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="16dp"
+
+        android:src="@mipmap/ic_samu_foreground"
+        app:layout_constraintEnd_toEndOf="@+id/card_samu"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card_samu" />
+
+    <TextView
+        android:id="@+id/text_samu"
+        android:layout_width="218dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:text="SAMU - 192"
+
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/card_samu"
+        app:layout_constraintTop_toTopOf="@+id/card_samu"
+        />
+
+    <TextView
+        android:id="@+id/card_fireman"
+
+        android:layout_width="357dp"
+        android:layout_height="115dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/shape_stroke"
+        android:layout_marginTop="10dp"
+        android:padding="30dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_samu" />
+
+    <ImageView
+        android:id="@+id/imagefireman"
+        android:layout_width="97dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="16dp"
+
+        android:src="@mipmap/ic_fireman_foreground"
+        app:layout_constraintEnd_toEndOf="@+id/card_fireman"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card_fireman" />
+
+    <TextView
+        android:id="@+id/text_fireman"
+        android:layout_width="218dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:text="BOMBEIRO - 193"
+
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/card_fireman"
+        app:layout_constraintTop_toTopOf="@+id/card_fireman"
+        />
+
+    <TextView
+        android:id="@+id/card_help"
+
+        android:layout_width="357dp"
+        android:layout_height="115dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/shape_stroke"
+        android:layout_marginTop="10dp"
+        android:padding="30dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_fireman" />
+
+    <ImageView
+        android:id="@+id/imagehelp"
+        android:layout_width="97dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="16dp"
+
+        android:src="@mipmap/ic_help_foreground"
+        app:layout_constraintEnd_toEndOf="@+id/card_help"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card_help" />
+
+    <TextView
+        android:id="@+id/text_help"
+        android:layout_width="218dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:text="AJUDA - 180"
+
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/card_help"
+        app:layout_constraintTop_toTopOf="@+id/card_help"
+        />
+
+    <TextView
+        android:id="@+id/card_sos"
+
+        android:layout_width="357dp"
+        android:layout_height="115dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@drawable/shape_stroke"
+        android:layout_marginTop="10dp"
+        android:padding="30dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_help" />
+
+    <ImageView
+        android:id="@+id/imagesos"
+        android:layout_width="97dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="16dp"
+
+        android:src="@mipmap/ic_sos_foreground"
+        app:layout_constraintEnd_toEndOf="@+id/card_sos"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card_sos" />
+
+    <TextView
+        android:id="@+id/text_sos"
+        android:layout_width="218dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:text="AJUDA - 180"
+
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/card_sos"
+        app:layout_constraintTop_toTopOf="@+id/card_sos"
+        />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_microfone_de_teatro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,7 @@
     android:background="@color/Secundary"
     >
 
+    
     <TextView
         android:id="@+id/textView"
         android:layout_width="170dp"

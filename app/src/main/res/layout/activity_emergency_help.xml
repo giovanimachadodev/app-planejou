@@ -81,6 +81,8 @@
         android:layout_margin="10dp"
         android:paddingHorizontal="35dp"
         android:backgroundTint="@color/red"
+        android:background="@drawable/shape"
+
 
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
@@ -97,6 +99,8 @@
         android:layout_margin="10dp"
         android:paddingHorizontal="35dp"
         android:backgroundTint="@color/green"
+        android:background="@drawable/shape"
+
 
 
         app:layout_constraintBottom_toBottomOf="@+id/imageView3"
