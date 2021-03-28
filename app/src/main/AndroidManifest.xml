@@ -9,8 +9,6 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".ServicesIncludedActivity">
-        </activity>
         <activity android:name=".FilterActivity">
         </activity>
         <activity android:name=".RedirectSmilesActivity">
