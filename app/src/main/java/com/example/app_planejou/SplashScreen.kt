@@ -17,9 +17,9 @@ class SplashScreen : AppCompatActivity() {
     fun splash() {
         Handler(
             Looper.getMainLooper()).postDelayed({
-            val proximaTela =
+            val intent =
                 Intent(this, MainActivity::class.java)
-            startActivity(proximaTela)
+            startActivity(intent)
             finish()
         }, 3000)}
 }
