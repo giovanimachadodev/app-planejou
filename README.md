@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/giovanimachadodev/app-planejou/blob/master/app/src/main/res/drawable-hdpi/logoPlanejou.png">
+  <img src="https://github.com/giovanimachadodev/app-planejou/blob/master/app/src/main/res/drawable-hdpi/logoplanejou.png">
 </p>
 
 
