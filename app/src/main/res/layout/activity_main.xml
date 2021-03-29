@@ -114,7 +114,7 @@
         app:layout_constraintEnd_toEndOf="@+id/textView2" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/btn_milhas_do_bem"
         android:layout_width="170dp"
         android:layout_height="186dp"
         android:layout_marginStart="10dp"
@@ -134,8 +134,8 @@
         android:text="Milhas\ndo bem!"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/textView13"
-        app:layout_constraintTop_toTopOf="@+id/textView13" />
+        app:layout_constraintStart_toStartOf="@+id/btn_milhas_do_bem"
+        app:layout_constraintTop_toTopOf="@+id/btn_milhas_do_bem" />
 
     <ImageView
         android:layout_width="90dp"
@@ -143,8 +143,8 @@
         android:layout_gravity="end|bottom"
         android:layout_margin="10dp"
         android:src="@drawable/ic_solidariedade"
-        app:layout_constraintBottom_toBottomOf="@+id/textView13"
-        app:layout_constraintEnd_toEndOf="@+id/textView13" />
+        app:layout_constraintBottom_toBottomOf="@+id/btn_milhas_do_bem"
+        app:layout_constraintEnd_toEndOf="@+id/btn_milhas_do_bem" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -156,17 +156,19 @@
 
 
     <ImageView
-        android:id="@+id/imageButton"
+        android:id="@+id/btn_confira_pacotes"
         android:layout_width="322dp"
-        android:layout_height="89dp"
+        android:layout_height="111dp"
         android:layout_marginBottom="72dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/paisagem"
+        android:src="@drawable/pacotes"
         android:focusable="false"
         app:layout_constraintBottom_toTopOf="@+id/btn_sos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"/>
+
+
     <Button
         android:id="@+id/btn_sos"
         android:layout_width="318dp"
@@ -175,7 +177,6 @@
         android:background="@drawable/shape"
         android:backgroundTint="@color/Primary"
         android:text="SOS"
-
         android:textColor="@color/White"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"

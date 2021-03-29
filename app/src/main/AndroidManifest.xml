@@ -31,6 +31,8 @@
         </activity>
         <activity android:name=".BuyYourTrip">
         </activity>
+        <activity android:name=".MenuSos">
+        </activity>
         <activity android:name=".Offer">
         </activity>
         <activity android:name=".SplashScreen">

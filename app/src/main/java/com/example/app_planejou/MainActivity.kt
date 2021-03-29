@@ -3,9 +3,10 @@ package com.example.app_planejou
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
+import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +16,9 @@ class MainActivity : AppCompatActivity() {
 
         val btnPlanejar : TextView = findViewById(R.id.btn_planning)
         val btnMeusSonhos: TextView = findViewById(R.id.btn_my_dreams)
-
+        val btnMilhasDoBem: TextView = findViewById(R.id.btn_milhas_do_bem)
+        val btnConfiraPacotes: ImageView = findViewById(R.id.btn_confira_pacotes)
+        val btnSos: Button = findViewById(R.id.btn_sos)
 
         btnPlanejar.setOnClickListener {
             val telaPlanejar = Intent(this, Planning::class.java)
@@ -25,6 +28,21 @@ class MainActivity : AppCompatActivity() {
         btnMeusSonhos.setOnClickListener {
             val telaMeusSonhos = Intent(this, PlannedTripsActivity::class.java)
             startActivity(telaMeusSonhos)
+        }
+
+        btnConfiraPacotes.setOnClickListener {
+            val telaConfiraPacotes= Intent(this, Offer::class.java)
+            startActivity(telaConfiraPacotes)
+        }
+
+        btnMilhasDoBem.setOnClickListener {
+            val telaMilhasDoBem = Intent(this, RedirectSmilesActivity::class.java)
+            startActivity(telaMilhasDoBem)
+        }
+
+        btnSos.setOnClickListener {
+            val telaSOS = Intent(this, MenuSos::class.java)
+            startActivity(telaSOS)
         }
 
     }
