@@ -13,7 +13,11 @@
         </activity>
         <activity android:name=".ViewPlannedPackageActivity">
         </activity>
+        <activity android:name=".CallPolice">
+        </activity>
         <activity android:name=".CalculateBudget">
+        </activity>
+        <activity android:name=".EmergencyHelp">
         </activity>
         <activity android:name=".ViewHotel">
         </activity>

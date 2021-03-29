@@ -211,7 +211,7 @@
         android:layout_height="108dp"
         android:layout_marginTop="4dp"
         android:gravity="center_vertical"
-        android:text="AJUDA - 180"
+        android:text="     AJUDA "
 
         android:textSize="30sp"
         android:textStyle="bold"

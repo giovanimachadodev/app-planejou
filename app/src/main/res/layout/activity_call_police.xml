@@ -13,8 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5"
-        />
+        app:layout_constraintGuide_begin="216dp"/>
 
 
     <TextView
@@ -30,33 +29,28 @@
         android:padding="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="20dp" />
-
+        app:layout_constraintVertical_bias="0.0" tools:layout_editor_absoluteX="-4dp"/>
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="166dp"
         android:layout_height="233dp"
+
         android:src="@mipmap/ic_police_foreground"
-
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="192dp" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"/>
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="102dp"
-        android:text="POLÍCIA 190"
-        android:gravity="center_vertical"
         android:textSize="30sp"
-        android:textStyle="bold"
-
+        android:gravity="center_vertical"
+        android:text="POLÍCIA 190"
         app:layout_constraintEnd_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
-
+        app:layout_constraintStart_toStartOf="@+id/imageView3" app:layout_constraintTop_toTopOf="@+id/imageView3"/>
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
@@ -74,7 +68,7 @@
     <Button
         android:id="@+id/btn_nao"
         android:text="NÃO"
-        android:textSize="35sp"
+        android:textSize="32sp"
         android:layout_width="148dp"
         android:layout_height="82dp"
         android:layout_margin="10dp"
@@ -91,7 +85,7 @@
     <Button
         android:id="@+id/btn_sim"
         android:text="SIM"
-        android:textSize="35sp"
+        android:textSize="32sp"
         android:layout_width="148dp"
         android:layout_height="82dp"
         android:layout_margin="10dp"

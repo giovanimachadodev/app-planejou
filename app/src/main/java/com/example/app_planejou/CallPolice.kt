@@ -7,5 +7,6 @@ class CallPolice : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_call_police)
+        supportActionBar?.hide()
     }
 }

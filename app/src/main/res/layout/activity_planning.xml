@@ -54,7 +54,6 @@
                     android:layout_width="245dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="12dp"
-                    android:hint="ex: São Paulo"
                     android:textSize="14sp" />
 
                 <ImageView
@@ -85,7 +84,6 @@
                     android:layout_width="245dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="12dp"
-                    android:hint="ex: Rio de Janeiro"
                     android:textSize="14sp" />
 
                 <ImageView
@@ -115,7 +113,6 @@
 
                     android:layout_height="35dp"
                     android:background="@drawable/shape_stroke"
-                    android:hint="Ida 26/03/20"
                     android:textAlignment="center"
                     android:textSize="14sp" />
 
@@ -124,7 +121,6 @@
 
                     android:layout_height="35dp"
                     android:background="@drawable/shape_stroke"
-                    android:hint="Ida 26/03/20"
                     android:textAlignment="center"
                     android:textSize="14sp" />
 
@@ -157,7 +153,6 @@
                     android:layout_width="245dp"
                     android:layout_height="35dp"
                     android:layout_marginTop="12dp"
-                    android:hint="ex: R$ 2000,00"
                     android:textSize="14sp" />
 
                 <ImageView
