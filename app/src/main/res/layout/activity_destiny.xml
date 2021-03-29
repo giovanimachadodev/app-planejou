@@ -1,69 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".DetailedOffer">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedOffer">
 
     <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="@color/Secundary"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/Secundary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_marginHorizontal="21dp"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginTop="33dp"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="21dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="33dp"
         >
 
             <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="30sp"
-                    android:textColor="@color/White"
-                    android:layout_gravity="center_vertical"
-                    tools:text="Escolha alguns destinos"
-                    android:id="@+id/textView2"
-                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/White"
+                android:layout_gravity="center_vertical"
+                android:text="Escolha alguns destinos"
+                android:id="@+id/textView2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="41dp"
-                android:layout_marginHorizontal="21dp"
-                android:layout_marginBottom="37dp"
-                android:background="@color/White"
-                android:paddingHorizontal="25dp"
-                android:orientation="vertical"
-        >
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginBottom="37dp"
+            android:background="@drawable/shape_stroke"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp">
 
             <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    tools:text="Destino pretendido"
-                    android:textSize="20sp"
-                    android:layout_marginTop="16dp"
-                    android:id="@+id/textView8" app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Destino pretendido"/>
+
             <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:paddingVertical="20dp"
-                    android:background="@drawable/shape_stroke"
-                    app:layout_constraintTop_toBottomOf="@+id/textView8" app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" android:id="@+id/editText"
-                    android:layout_marginTop="12dp"/>
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape_stroke"
+                android:paddingVertical="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"/>
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="144dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="48dp"
+                android:src="@drawable/rio"
+                app:layout_constraintBottom_toTopOf="@+id/imageView11"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="144dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="48dp"
+                android:src="@drawable/minas_g"
+                app:layout_constraintBottom_toTopOf="@+id/imageView8" app:layout_constraintEnd_toEndOf="parent"/>
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="144dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="56dp"
+                android:src="@drawable/pernambuco"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="144dp"
+                android:layout_height="100dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="56dp"
+                android:src="@drawable/utah"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <ImageView
+
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/ic_microfone_de_teatro"
+                app:layout_constraintBottom_toBottomOf="@+id/editText"
+                app:layout_constraintEnd_toEndOf="@+id/editText" app:layout_constraintTop_toTopOf="@+id/editText"/>
+
+            <ImageView
+
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/ic_office_pin" app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+                app:layout_constraintEnd_toEndOf="@+id/imageView11"/>
+            <ImageView
+
+                android:id="@+id/imageView14"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/ic_office_pin"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+                app:layout_constraintEnd_toEndOf="@+id/imageView8"/>
+            <ImageView
+
+                android:id="@+id/imageView13"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="84dp"
+                android:src="@drawable/ic_office_pin"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+                app:layout_constraintEnd_toEndOf="@+id/imageView9"/>
+            <ImageView
+
+                android:id="@+id/imageView12"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="84dp"
+                android:src="@drawable/ic_office_pin"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+                app:layout_constraintEnd_toEndOf="@+id/imageView10"/>
+
+
+            <!--
 
             <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
@@ -72,7 +162,13 @@
                     android:layout_marginTop="68dp" app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintVertical_bias="0.209"/>
+
+                    -->
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
 
     </LinearLayout>
 
