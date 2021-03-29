@@ -1,4 +1,7 @@
-<h1 align="center"> PLANEJOU </h1>
+<p align="center">
+  <img src="https://github.com/giovanimachadodev/app-planejou/blob/master/app/src/main/res/drawable-hdpi/logoPlanejou.png">
+</p>
+
 
 <h2 align="center"> O aplicativo perfeito para o planejamento de suas viagens de uma forma mais prática e acessível! </h2>
 <br>
