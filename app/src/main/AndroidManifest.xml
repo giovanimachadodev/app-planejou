@@ -17,6 +17,14 @@
         </activity>
         <activity android:name=".ViewHotel">
         </activity>
+        <activity android:name=".Destiny">
+        </activity>
+        <activity android:name=".MenuSos">
+        </activity>
+        <activity android:name=".CallPolice">
+        </activity>
+        <activity android:name=".EmergencyHelp">
+        </activity>
         <activity android:name=".ServicesIncludedActivity">
         </activity>
         <activity android:name=".FilterActivity">
@@ -30,8 +38,6 @@
         <activity android:name=".Planning">
         </activity>
         <activity android:name=".BuyYourTrip">
-        </activity>
-        <activity android:name=".MenuSos">
         </activity>
         <activity android:name=".Offer">
         </activity>

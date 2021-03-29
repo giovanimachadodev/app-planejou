@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnPlanejar : TextView = findViewById(R.id.btn_planning)
         val btnMeusSonhos: TextView = findViewById(R.id.btn_my_dreams)
+        val btnProximosDestinos: TextView = findViewById(R.id.btn_destinos)
         val btnMilhasDoBem: TextView = findViewById(R.id.btn_milhas_do_bem)
         val btnConfiraPacotes: ImageView = findViewById(R.id.btn_confira_pacotes)
         val btnSos: Button = findViewById(R.id.btn_sos)
@@ -44,6 +45,12 @@ class MainActivity : AppCompatActivity() {
             val telaSOS = Intent(this, MenuSos::class.java)
             startActivity(telaSOS)
         }
+
+        btnProximosDestinos.setOnClickListener {
+            val telaProximosDestinos = Intent(this, Destiny::class.java)
+            startActivity(telaProximosDestinos)
+        }
+
 
     }
 

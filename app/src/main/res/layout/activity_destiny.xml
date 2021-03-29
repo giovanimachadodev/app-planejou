@@ -32,7 +32,7 @@
                 android:textColor="@color/White"
                 android:layout_gravity="center_vertical"
                 android:text="Escolha alguns destinos"
-                android:id="@+id/textView2"
+                android:id="@+id/btn_destinos"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>

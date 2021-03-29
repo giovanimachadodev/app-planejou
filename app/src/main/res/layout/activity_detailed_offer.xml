@@ -24,15 +24,15 @@
         >
 
             <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="30sp"
-                    android:textColor="@color/White"
-                    android:layout_gravity="center_vertical"
-                    android:text="Finlândia - Helsinque"
-                    android:id="@+id/textView2" app:layout_constraintEnd_toStartOf="@+id/imageView2"
-                    app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:textColor="@color/White"
+                android:layout_gravity="center_vertical"
+                android:text="Finlândia - Helsinque"
+                android:id="@+id/btn_destinos" app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
             <ImageView
                     android:layout_width="53.5dp"
                     android:layout_height="53.5dp"
