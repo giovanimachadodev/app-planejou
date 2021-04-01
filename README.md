@@ -41,3 +41,7 @@ inclusão de mais usuários que gostam de viajar, democratizando o direito ao la
 ✅ Filtros específicos para personalizar o pacote da viagem
 
 ✅ Redirecionamento para a compra da viagem através do site Smiles 
+
+<br><br>
+<img src="https://github.com/giovanimachadodev/app-planejou/blob/master/app/src/main/res/drawable/telas.png" heigth="4000px">
+
